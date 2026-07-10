@@ -2,7 +2,7 @@
 
 #include <cstdint>
 #include "Flags.hpp"
-#include "../memory.hpp"
+#include "../Memory/memory.hpp"
 
 using uint8  = unsigned char;
 using uint16 = unsigned short;
@@ -23,14 +23,14 @@ public:
     uint8 D;
     uint8 E;
     uint8 F;
-    uint8 G;
     uint8 H;
+    uint8 L;
 
     uint16 SP;
     uint16 PC;
 
     Flags flags;
-    Memory memory;
+    memory memory;
 
     Cpu();
 
